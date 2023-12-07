@@ -18,4 +18,4 @@ const deleteJob = async (req, res) => {
   res.send("Delete Job");
 };
 
-model.expoers = { getAllJobs, getJob, createJob, updateJob, deleteJob };
+module.exports = { getAllJobs, getJob, createJob, updateJob, deleteJob };
