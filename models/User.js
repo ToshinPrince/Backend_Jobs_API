@@ -20,8 +20,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please Provide Name"],
     minlength: 6,
-    maxlength: 12,
   },
 });
 
-module.exports = mongoose.model(User, UserSchema);
+module.exports = mongoose.model("User", UserSchema);
