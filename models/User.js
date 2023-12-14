@@ -32,6 +32,7 @@ UserSchema.pre("save", async function (next) {
   next();
 });
 
+//Instance Method - Schema Instance Method in mongoose
 UserSchema.methods.createJWT = function () {
   return jwt.sign(
     { userId: this._id, name: this.name },
