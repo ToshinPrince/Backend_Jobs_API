@@ -17,10 +17,6 @@ const auth = async (req, res, next) => {
     //attach the user to the job route
     req.user = { userId: payload.userId, name: payload.name };
 
-    // //second logic for line 18
-    // const user = User.findById(payload.id).select("-password");
-    // req.user = user;
-
     next();
   } catch (error) {
     throw new UnauthenticatedError("Authentication Invalid");
