@@ -63,6 +63,8 @@ const deleteJob = async (req, res) => {
   res.status(StatusCodes.OK).json({ job });
 };
 
-const update = async (req, res) => {};
+const update = async (req, res) => {
+  res.send("upadating");
+};
 
 module.exports = { getAllJobs, getJob, createJob, updateJob, deleteJob };
